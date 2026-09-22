@@ -1,5 +1,6 @@
-\usepackage{fancyhdr,multicol,xcolor,graphicx,xparse,fontspec} %
+\usepackage{fancyhdr,multicol,xcolor,graphicx,xparse} %,fontspec
 \usepackage{tikz}
+\usepackage{lmodern} % for removing font size warning
 \usepackage{caption} % used to remove figure numbers with \caption*{}
 \usetikzlibrary{fadings}
 % Soft gradient overlays for the cover (dark at the edge -> clear)
@@ -26,7 +27,7 @@
 \pagestyle{plain}
 \raggedcolumns
 \setlength{\multicolsep}{0pt}
-\setlength{\columnseprule}{0pt}
+\setlength{\columnseprule}{0pt} % no line between columns
 
 
 
