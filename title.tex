@@ -1,0 +1,35 @@
+\begin{titlepage}
+    \hypersetup{linkcolor=white}   % recipe links white -- scoped to this page
+
+    \begin{tikzpicture}[remember picture, overlay]
+        % --- Full-page background photo ---
+        \node[inner sep=0pt] at (current page.center) {%
+            \includegraphics[width=\paperwidth, height=\paperheight]%
+                % {images/2022-09-18-douglas_steamed_buns.jpg}};
+                {images/MissingImage.png}};
+
+        % --- Soft gradient scrims for legibility ---
+        \fill[black, opacity=0.8, path fading=scrim top]
+            (current page.north west) rectangle
+            ([yshift=-0.44\paperheight]current page.north east);
+        \fill[black, opacity=0.8, path fading=scrim bottom]
+            (current page.south west) rectangle
+            ([yshift=0.38\paperheight]current page.south east);
+
+        % --- Title: lower down and larger ---
+        \node[anchor=north, align=center, text=white,
+              text width=\dimexpr\paperwidth-2cm\relax]
+             at ([yshift=-2cm]current page.north) {%
+            %{\fontsize{24}{28}\selectfont\itshape Murray's}\\[10pt]
+            {\fontsize{34}{40}\selectfont\bfseries Murray's Recipe Book}\\[12pt]
+            % \textcolor{white}{\rule{4cm}{0.4pt}}%
+        };
+
+        %--- Date + credit: lifted off the bottom edge ---
+        \node[anchor=south, align=center, text=white,
+              text width=\dimexpr\paperwidth-2.6cm\relax]
+             at ([yshift=1.6cm]current page.south) {%
+            {\Large Compiled \today}\\[12pt]
+             };
+    \end{tikzpicture}
+\end{titlepage}

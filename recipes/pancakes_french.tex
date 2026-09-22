@@ -1,0 +1,34 @@
+\recipe{Crepes}
+\worktime{10 minutes}
+\totaltime{30 minutes}
+\makes{Makes enough for one hungry person}
+\source{Jack}
+
+\begin{ingredients}
+    \item Whole wheat flour, \SI{115}{\gram} 
+    \item Whole milk, \SI{285}{\gram}
+    \item Eggs, 2
+    \item Salt, \SI{0.5}{\teaspoon}
+\end{ingredients}
+
+\begin{method}
+Mix ingredients together. Leave overnight. Fry.
+\end{method}
+
+
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width=\linewidth]{images/French-Crepes-Feature1.jpg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+	\end{tikzpicture}
+
+  \caption*{}
+\end{figure}
