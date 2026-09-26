@@ -1,0 +1,76 @@
+\recipe{Recipe Template}
+\label{recipe:recipe_template}
+\makes{x portions}
+\worktime{\SI{10} \minute}
+\totaltime{\SI{10} \minute}
+\source{\href{https://www.bbcgoodfood.com/}{short link to source}}
+
+
+\begin{ingredients}
+
+  \item Udon noodles, 2 packs
+  \item Tofu or chicken, \SI{200}{\gram}
+  \item Water/Stock, \SI{2.5}{\litre}
+  \item Coconut milk, \SI{250}{\milli \litre}
+  \item Garlic, \SI{1}{\tablespoon} crushed
+  \item Turmeric, \SI{1.5}{\teaspoon}
+
+  \ingroup{To Serve}
+  \item 2 spring onions, chopped
+  \item Naan bread or rice
+\end{ingredients}
+
+
+\begin{method}
+  	A recipe must fit onto one page
+  
+  	A recipe must have an image, preferably one taken by the creator with friends.
+
+  	Include amounts in the method, such as fry for \SI{30}{\second}.
+
+  	Recipe Book To do list:
+  
+  	Add more recipies (from bea's canva)
+  
+  	un-indent the ingroup headings in the ingredients section.
+  
+  	make the pictures fill the rest of the page (including any following sections)
+
+	replace stock images with personal images.
+	
+	add tags such as: vegetarian, vegan, 
+	
+	add number of calories per portion
+	
+	clean up style file
+	
+	move picture round corners into recipe styling.
+	
+	change introduction page numbering to arabic (not roman numeral)
+	
+	add page numbers
+  
+\end{method}
+
+
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/MissingImage.png}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+	\end{tikzpicture}
+
+  \caption*{caption for image with date and information, 1st January 2026}
+\end{figure}
+
+\begin{notes}
+notes on recipe go here.
+\end{notes}
+
