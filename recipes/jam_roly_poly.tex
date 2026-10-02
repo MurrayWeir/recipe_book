@@ -48,25 +48,36 @@ foil and paper, and thickly slice to serve.
 
 
 \begin{figure}[h]
-  	\centering
-  	
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/MissingImage.png}}%
+  \centering
   
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
-	\end{tikzpicture}
-
-  \caption*{caption for image with date and information, 1st January 2026}
+  \begin{minipage}{0.59\linewidth}
+    \centering
+    \begin{tikzpicture}
+      \sbox0{\includegraphics[width=\linewidth]{images/toddleWaggon.jpeg}}%
+      
+      \path[
+        clip,
+        rounded corners=0.5cm
+      ] (0,0) rectangle (\wd0,5cm);
+      
+      \node[inner sep=0pt, outer sep=0pt,
+        anchor=south west] at (0,-1.5cm) {\usebox0};
+    \end{tikzpicture}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \begin{tikzpicture}
+      \sbox0{\includegraphics[width=\linewidth]{images/jamRolyPolys.jpeg}}%
+      
+      \path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+      
+      \node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+    \end{tikzpicture}
+  \end{minipage}
 \end{figure}
 
 \begin{notes}
-Sit on the floor of a campsite in a
-circle and eat from 1 bowl for extra
-atmosphere.
+Sit on the floor of a campsite in a circle and eat from 1 bowl for extra atmosphere.
 \end{notes}
 

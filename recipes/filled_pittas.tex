@@ -48,21 +48,38 @@ each side. Flip them over when they go golden-brown
 \end{method}
 
 
+
+
 \begin{figure}[h]
+  \centering
+  
+  \begin{minipage}{0.48\linewidth}
   	\centering
-  	
-  	\begin{tikzpicture}
+	\begin{tikzpicture}
   		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.4\linewidth]{images/MissingImage.png}}%
+  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/bellesPittas.jpeg}}%
   
   		% Draw a clipping rectangle with rounded corners
   		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
   
   		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0, 0) {\usebox0};
 	\end{tikzpicture}
-
-  \caption*{}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.48\linewidth}
+  	\centering
+	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = 0.55\linewidth]{images/bellesPittasBeReal.jpeg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0, 0) {\usebox0};
+	\end{tikzpicture}
+  \end{minipage}
 \end{figure}
 
 \begin{notes}

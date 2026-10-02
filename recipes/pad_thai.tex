@@ -59,15 +59,13 @@ scallions. Give one more toss and serve :)
   	
   	\begin{tikzpicture}
   		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.2\linewidth]{images/MissingImage.png}}%
+  		\sbox0{\includegraphics[width = 0.4\linewidth]{images/padThai.jpeg}}%
   
   		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,3.5cm);
   
   		% Place the image inside the clipped area
   		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
 	\end{tikzpicture}
-
-  \caption*{}
 \end{figure}
 

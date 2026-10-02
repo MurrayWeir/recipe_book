@@ -61,16 +61,15 @@ times as they cool, leave them to soak for 20 mins before eating.
   	
   	\begin{tikzpicture}
   		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/MissingImage.png}}%
+  		\sbox0{\includegraphics[width = 0.5\linewidth]{images/domCardamonBuns.jpeg}}%
   
   		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,9cm);
   
   		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0, -2) {\usebox0};
 	\end{tikzpicture}
 
-  \caption*{caption for image with date and information, 1st January 2026}
 \end{figure}
 
 \begin{notes}

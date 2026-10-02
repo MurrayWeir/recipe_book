@@ -34,45 +34,39 @@
   \centering
   
   \begin{minipage}{0.49\linewidth}
-  	\centering
-	\begin{tikzpicture}
-    		% Save the image at 110% scale
-	    \sbox0{\includegraphics[width=\linewidth]{images/MissingImage.png}}%
-
-	    % Landscape clipping rectangle
-	    \path[
-    	    clip,
-    	    	rounded corners=0.5cm
-	    ] (0,0) rectangle (\linewidth,\linewidth);
-
-	    	% Ce	nter the zoomed image inside the landscape crop
-    		\node[
-    		    inner sep=0pt,
-        		outer sep=0pt,
-	        anchor=center
-    		] at (0.5\linewidth, 0.5\linewidth) {\usebox0};
-	\end{tikzpicture}
+    \centering
+    \begin{tikzpicture}
+      \sbox0{\includegraphics[width=\linewidth]{images/GutoServing.jpeg}}%
+      
+      \path[
+        clip,
+        rounded corners=0.5cm
+      ] (0,0) rectangle (\wd0,\ht0);
+      
+      \node[
+        inner sep=0pt,
+        outer sep=0pt,
+        anchor=south west
+      ] at (0,0) {\usebox0};
+    \end{tikzpicture}
   \end{minipage}
   \hfill
   \begin{minipage}{0.49\linewidth}
-  	\centering
-	\begin{tikzpicture}
-    		% Save the image at 110% scale
-	    \sbox0{\includegraphics[width=\linewidth]{images/MissingImage.png}}%
-
-	    % Landscape clipping rectangle
-	    \path[
-    	    clip,
-    	    	rounded corners=0.5cm
-	    ] (0,0) rectangle (\linewidth,\linewidth);
-
-	    	% Ce	nter the zoomed image inside the landscape crop
-    		\node[
-    		    inner sep=0pt,
-        		outer sep=0pt,
-	        anchor=center
-    		] at (0.5\linewidth, 0.5\linewidth) {\usebox0};
-	\end{tikzpicture}
+    \centering
+    \begin{tikzpicture}
+      \sbox0{\includegraphics[width=\linewidth]{images/questionMarkToast.jpeg}}%
+      
+      \path[
+        clip,
+        rounded corners=0.5cm
+      ] (0,0) rectangle (\wd0,\ht0);
+      
+      \node[
+        inner sep=0pt,
+        outer sep=0pt,
+        anchor=south west
+      ] at (0,0) {\usebox0};
+    \end{tikzpicture}
   \end{minipage}
 \end{figure}
 
