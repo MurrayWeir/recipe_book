@@ -5,6 +5,25 @@
 \totaltime{2 days}
 \source{}
 
+
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width=\linewidth]{images/theperfectloaf-a-simple-workweek-sourdough-bread-recipe-1.jpg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+	\end{tikzpicture}
+
+  \caption*{}
+\end{figure}
+
+
 \begin{ingredients}
 \ingroup{Levain}
 	\item 38 grams stoneground whole wheat flour
@@ -18,6 +37,18 @@
 	\item 653 grams water
 	\item 18 grams fine sea salt
 \end{ingredients}
+
+\begin{center}
+  \begin{tabular}{ r|l } 
+  	Step & 2 day method\\
+    \hline
+    Levain & 08:00\\
+    Autolyse & 12:00\\
+    Stretch \& Fold &  13:10 to 17:10\\
+    Shape then rest & 17:35\\
+    Bake & 09:00\\
+  \end{tabular}
+\end{center}
 
 \begin{method}
 
@@ -44,30 +75,15 @@ shut. Let the dough sit out on the counter for 20 minutes. Then, place both bask
 overnight.
 
 Bake (Preheat oven at 8:30 a.m., bake at 9:30 a.m.) Preheat your oven with a combo cooker or Dutch oven
-inside to 450°F (230°C). When the oven is preheated, remove your dough from the fridge, score it, and transfer
+inside to 230°C. When the oven is preheated, remove your dough from the fridge, score it, and transfer
 to the preheated combo cooker. Place the cooker in the oven, cover with the lid, and bake for 20 minutes. After
 this time, remove the lid (you can keep it in the oven or remove it) and continue to bake for 30 minutes longer.
-When done, the internal temperature should be around 208°F (97°C). Let the loaves cool for 1 to 2 hours on a
+When done, the internal temperature should be around 97°C. Let the loaves cool for 1 to 2 hours on a
 wire rack before slicing.
 \end{method}
 
 
 
 
-\begin{figure}[h]
-  	\centering
-  	
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width=\linewidth]{images/theperfectloaf-a-simple-workweek-sourdough-bread-recipe-1.jpg}}%
-  
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
-	\end{tikzpicture}
 
-  \caption*{}
-\end{figure}
     

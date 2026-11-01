@@ -32,6 +32,21 @@
   \item crusty bread to serve (optional)
 \end{ingredients}
 
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/spaghetti_bolognese.jpg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
+	\end{tikzpicture}
+
+\end{figure}
 
 \begin{method}
   	Put a large saucepan on a medium heat and add 1 tbsp olive oil.
@@ -69,20 +84,6 @@ basil leaves and crusty bread, if you like.
 \end{method}
 
 
-\begin{figure}[h]
-  	\centering
-  	
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.6\linewidth]{images/spaghetti_bolognese.jpg}}%
-  
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
-	\end{tikzpicture}
 
-\end{figure}
 
 

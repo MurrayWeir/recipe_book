@@ -22,6 +22,21 @@
   \item Parmesan cheese, plus more for serving.
 \end{ingredients}
 
+\begin{figure}[h]
+  	\centering
+
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = 0.9\linewidth]{images/butternutSquashmacncheese.png}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,6cm);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,-4cm) {\usebox0};
+	\end{tikzpicture}
+	
+\end{figure}
 
 \begin{method}
 To roast the squash: Preheat the oven to 220 degrees celsuis. Line a
@@ -48,27 +63,14 @@ Pour in the water and salt. Add 2 cups of the mashed butternut squash.
 Cover the pot and bring it to a boil over high heat. Once boiling,
 remove the lid and set the timer for 8 minutes.
 
-Cook, stirring occasionally, until the timer goes off. Do not drain the
-MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT MISSING TEXT
+Cook, stirring occasionally, until the timer goes off. Do not drain the water. Stir in the cream cheese. Cook until the cream cheese has melted and the pasta is al dente (careful when you taste, it’s quite hot), about 4 to 5 more minutes. Turn down the heat as necessary to avoid scorching but maintain a steady simmer.
+
+Reduce the heat to low. Add the cheddar and Parmesan, and stir until the mixture is melted and creamy. Remove the pot from the heat.
+
+Season with salt, to taste (I usually add ¼ teaspoon more). Serve the pasta in bowls with extra Parmesan grated on top, if desired. Leftovers keep well, covered and refrigerated, for up to 5 days.
 \end{method}
 
 
-\begin{figure}[h]
-  	\centering
 
-
-
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = \linewidth]{images/butternutSquashmacncheese.png}}%
-  
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0.2\linewidth) rectangle (\wd0,0.5cm);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=center] at (0.5\linewidth, 0.5cm) {\usebox0};
-	\end{tikzpicture}
-	
-\end{figure}
 
 

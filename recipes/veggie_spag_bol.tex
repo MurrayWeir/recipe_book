@@ -6,6 +6,23 @@
 \source{Lucy}
 
 
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = 0.7\linewidth]{images/veggieSpagBol.jpeg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip,rounded corners=0.5cm] (0,0) rectangle (\wd0,6cm);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,-3cm) {\usebox0};
+	\end{tikzpicture}
+
+  \caption*{}
+\end{figure}
+
 \begin{ingredients}
 
   \item 1 small White Onion, diced
@@ -51,23 +68,6 @@ over cooked pasta.
 
 \end{method}
 
-
-\begin{figure}[h]
-  	\centering
-  	
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = 0.2\linewidth]{images/veggieSpagBol.jpeg}}%
-  
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,\ht0);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=south west] at (0,0) {\usebox0};
-	\end{tikzpicture}
-
-  \caption*{}
-\end{figure}
 
 \begin{notes}
 Leftovers last in the fridge for a week and in the freezer for a month

@@ -5,6 +5,21 @@
 \totaltime{\SI{10} \minute}
 \source{\href{https://www.bbcgoodfood.com/}{bbc good food}}
 
+\begin{figure}[h]
+  	\centering
+  	
+  	\begin{tikzpicture}
+  		% Save the image in a box to get its dimensions
+  		\sbox0{\includegraphics[width = \linewidth]{images/burnt-aubergine-chilli.jpg}}%
+  
+  		% Draw a clipping rectangle with rounded corners
+  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,5cm);
+  
+  		% Place the image inside the clipped area
+  		\node[inner sep=0pt, outer sep=0pt, anchor=center] at (0.5\linewidth, 2cm) {\usebox0};
+	\end{tikzpicture}
+
+\end{figure}
 
 \begin{ingredients}
 
@@ -60,19 +75,5 @@ Serve hot over rice with whichever accompaniments you want!
 \end{method}
 
 
-\begin{figure}[h]
-  	\centering
-  	
-  	\begin{tikzpicture}
-  		% Save the image in a box to get its dimensions
-  		\sbox0{\includegraphics[width = \linewidth]{images/burnt-aubergine-chilli.jpg}}%
-  
-  		% Draw a clipping rectangle with rounded corners
-  		\path[clip, rounded corners=0.5cm] (0,0) rectangle (\wd0,2cm);
-  
-  		% Place the image inside the clipped area
-  		\node[inner sep=0pt, outer sep=0pt, anchor=center] at (0.5\linewidth, 2cm) {\usebox0};
-	\end{tikzpicture}
 
-\end{figure}
 
